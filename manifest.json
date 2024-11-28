@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest",
+  "manifest_version": 3,
+  "name": "SCRUM Gambler",
+  "description": "Helps if you can't decide how many points you should give in scrum poker. (only works on scrumpoker-online.org)",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "js": [
+        "content-script.js"
+      ],
+      "matches": [
+        "https://*.scrumpoker-online.org/*"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
